@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .size1 {
+        width: 40%;
+      }
+      body {
+        height: 300vh;
+      }
+      .space {
+        margin-right: 10px;
+      }
+      .hero-txt {
+        font-family: Inter, sans-serif;
+        font-size: 24.5px;
+        font-weight: bold;
+        color: rgb(33, 49, 60);
+      }
+      .card {
+        border: 2px solid white;
+      }
+
+      .card:hover {
+        border: 2px solid rgb(3, 243, 3);
+      }
+      h5:hover {
+        color: green;
+      }
+      span:hover {
+        color:  rgb(3, 243, 3);
+      }
+      input:hover {
+        color:  rgb(3, 243, 3);
+      }
+      .siz {
+        height: 250px;
+        width: 450px;
+      }
+      .hero-txt1 {
+        font-family: Inter, sans-serif;
+        font-size: 24.5px;
+        font-weight: bold;
+        color: rgb(33, 49, 60);
+        padding-left: 120px;
+        padding-top: 40px;
+      }
+      .hero-img {
+        background-image: url("./card1.jpg");
+        height: 471px;
+        width: 310px;
+        /* margin-left: 100px; */
+        border-radius: 12px;
+      }
+      .mid-txt {
+        font-family: Inter, sans-serif;
+        font-size: 24.5px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        line-height: 29.4px;
+      }
+      .mid-txt2 {
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        line-height: 22.4px;
+      }
+      .head-footer {
+        font-family: Inter, sans-serif;
+        font-size: 17.5px;
+        font-weight: bold;
+        color: rgb(33, 49, 60);
+        font-weight: 600;
+        line-height: 21px;
+      }
+      .head-footer {
+        font-family: Inter, sans-serif;
+        font-size: 17.5px;
+        font-weight: bold;
+        color: rgb(81, 106, 123);
+        font-weight: 600;
+        line-height: 21px;
+      }
+      .head-footer2 {
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(92, 108, 117);
+        font-weight: 500;
+        line-height: 22.5px;
+      }
+      .txt-foot{
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(33, 49, 60);
+        font-weight: 600;
+        line-height: 16.5px;
+       
+      }
+      .txt-foot2{
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+      
+        color:rgb(92, 108, 117);
+        
+        line-height: 16.5px;
+        
+      
+      }
+      .main{
+        font-family: Inter, sans-serif;
+        font-size: 17px;
+      font-weight: bold;
+        color: rgb(33, 49, 60);
+        font-weight: 600;
+        line-height: 21.5px;
+      }
+      .main1{
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+      font-weight: bold;
+        color: rgb(92, 108, 117);
+        font-weight: 500;
+        line-height: 22px;
+      }
+     
+.search-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  width: 80%; /* Increased width to 80% of the search bar */
+}
+
+.search-button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px; /* Increased padding to make the button larger */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px; /* Increased font size to make the text larger */
+  margin-left: 10px;
+  cursor: pointer;
+  width: 20%; /* Increased width to 20% of the search bar */
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    
+<!-- NAV-BAR -->
+   <div>
+      <img style="margin-left: 120px;" src="./freshcart-logo.svg" alt="" />
+      <input
+        style="width: 38%; margin: 25px; align-items: center"
+        type="text"
+        placeholder="Search.." />
+      <button type="button" class="btn btn-outline-success">
+        loaction<svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-geo-alt"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+          />
+          <path
+            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+          />
+        </svg>
+      </button>
+      <svg style="margin-left: 270px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+      </svg>
+      <svg  style="margin-left: 15px;"   xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+      </svg>
+      <svg style="margin-left: 15px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+      </svg>
+    </div>
+<div style="margin-left: 122px;">
+  <button type="button" class="btn btn-md" style="background-color: #0AAD0A; color: aliceblue;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-border-all" viewBox="0 0 16 16">
+    <path d="M0 0h16v16H0zm1 1v6.5h6.5V1zm7.5 0v6.5H15V1zM15 8.5H8.5V15H15zM7.5 15V8.5H1V15z"/>
+  </svg> All Depatrement</button>
+   <div class="btn-group" style="margin: 20px;">
+    <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+      Home
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item mx-40" href="#">Home1</a></li>
+      <li><a class="dropdown-item mx-40" href="#">Home2</a></li>
+      <li><a class="dropdown-item mx-40" href="#">Home3</a></li>
+      <li><a class="dropdown-item mx-40" href="#">Home4</a></li>
+      <li><a class="dropdown-item mx-40" href="#">Home5</a></li>
+    </ul>
+
+    <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+      Shop
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item mx-10" href="#">Shop - Filter</a></li>
+          <li><a class="dropdown-item mx-10" href="#">Shop Wide</a></li>
+          <li><a class="dropdown-item mx-10" href="#">Shop Single</a></li>
+          <li><a class="dropdown-item mx-10" href="#">Shop Single v2</a></li>
+          <li><a class="dropdown-item mx-10" href="#">Shop Wishlist</a></li>
+          <li><a class="dropdown-item mx-10" href="#">Shop Cart</a></li>
+          <li><a class="dropdown-item mx-10" href="#">Shop Checkout</a></li>
+    </ul>
+
+
+    <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+      Stores
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Store List</a></li>
+      <li><a class="dropdown-item" href="#">Store Grid</a></li>
+      <li><a class="dropdown-item" href="#">Store Single</a></li>
+    </ul>
+
+
+    <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+      Mega-Menu
+    </button>
+    <ul class="dropdown-menu">
+      <img style="height: 300px; width: 1400px;" src="./Drop.png" >
+    </ul>
+
+    <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+      Pages
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Blog</a></li>
+      <li><a class="dropdown-item" href="#">Blog-Single</a></li>
+      <li><a class="dropdown-item" href="#">Blog Categroy</a></li>
+      <li><a class="dropdown-item" href="#">About-Us</a></li>
+      <li><a class="dropdown-item" href="#">404 Error</a></li>
+      
+      
+    </ul>
+
+    <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+      Accounts
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Sign-In</a></li>
+      <li><a class="dropdown-item" href="#">Sign-up</a></li>
+      <li><a class="dropdown-item" href="#">forget-Password</a></li>
+      <li><a class="dropdown-item" href="#">My-account</a></li>
+      
+    </ul>
+    <button type="button" class="btn btn-light">Documents</button>
+    <button type="button" class="btn btn-light">Docs</button>
+  </div>
+</div>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./Screenshot 2024-06-28 191135.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./Screenshot 2024-06-28 191310.png" class="d-block w-100" alt="...">
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+    
+
+    <p style="padding-left: 120px; padding-top: 40px" class="hero-txt">
+      Featured Catgeories
+    </p>
+    <div
+      style="display: flex; gap: 40px; justify-content: center; margin-top: 0px"
+    >
+      <div class="card" style="width: 11rem; height: auto">
+        <img src="./1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-weight: bolder" class="card-title">
+            Cleaning Essenitals
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 11rem">
+        <img src="./2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-weight: bolder" class="card-title">Pet-Care</p>
+        </div>
+      </div>
+      <div class="card" style="width: 11rem">
+        <img src="./3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-weight: bolder" class="card-title">
+            Daliy Bread & eggs
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 11rem">
+        <img src="./4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-weight: bolder" class="card-title">
+            Bakery and Biscuits
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 11rem">
+        <img src="./5.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-weight: bolder" class="card-title">Instant Food</p>
+        </div>
+      </div>
+      <div class="card" style="width: 11rem">
+        <img src="./6.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-weight: bolder" class="card-title">
+            Tea& Coffee Drinks
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 40px;
+      "
+    >
+      <div class="card">
+        <img
+          src="./11.png"
+          alt=""
+          style="height: 230px; width: 620px; border-radius: 21px"
+        />
+      </div>
+      <div>
+        <img
+          class="card"
+          src="./12.png"
+          alt=""
+          style="height: 230px; width: 620px; border-radius: 21px"
+        />
+      </div>
+    </div>
+    <p class="hero-txt1">Popular-Products</p>
+    <div style="display: flex; justify-content: center; gap: 20px">
+      <div
+        class="card"
+        style="width: 15.2rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./img-1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Haldiram's Shev-Bhujia</h5>
+          <p class="card-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            4.5(149)
+          </p>
+          <p>
+            $18 <s>$24</s
+            ><a href="#" style="margin-left: 30px" class="btn btn-success"
+              >+ADD</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        style="width: 15.2rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./img-2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">NutriChoice Digestive</h5>
+          <p class="card-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            4.5(149)
+          </p>
+          <p>
+            $24 <s>$30</s
+            ><a href="#" style="margin-left: 30px" class="btn btn-success"
+              >+ADD</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        style="width: 15.2rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./img-3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Cadbury 5Star Chocolate</h5>
+          <p class="card-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            4.5(149)
+          </p>
+          <p>
+            $32 <s>$35</s
+            ><a href="#" style="margin-left: 30px" class="btn btn-success"
+              >+ADD</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        style="width: 15.2rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./img-4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Onion-Flavour Potato</h5>
+          <p class="card-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            4.5(149)
+          </p>
+          <p>
+            $3 <s>$5</s
+            ><a href="#" style="margin-left: 30px" class="btn btn-success"
+              >+ADD</a
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        class="card"
+        style="width: 15.2rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./img-5.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Salted Instant Popcorn</h5>
+          <p class="card-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            4.5(149)
+          </p>
+          <p>
+            $13 <s>$18</s
+            ><a href="#" style="margin-left: 30px" class="btn btn-success"
+              >+ADD</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      "
+    >
+      <div
+        class="card"
+        style="width: 15.2rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./img-6.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Blue-Berry Yogurt</h5>
+          <p class="card-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            4.5(149)
+          </p>
+          <p>
+            $18 <s>$24</s
+            ><a href="#" style="margin-left: 30px" class="btn btn-success"
+              >+ADD</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        style="width: 15.2rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./img-7.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Britannia Cheese Slices</h5>
+          <p class="card-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            4.5(149)
+          </p>
+          <p>
+            $18 <s>$24</s
+            ><a href="#" style="margin-left: 30px" class="btn btn-success"
+              >+ADD</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        style="width: 15.2rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./img-8.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Kellogg's original Cereals</h5>
+          <p class="card-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            4.5(149)
+          </p>
+          <p>
+            $18 <s>$24</s
+            ><a href="#" style="margin-left: 30px" class="btn btn-success"
+              >+ADD</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        style="width: 15.2rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./img-9.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Slurrp Milet Chocolate</h5>
+          <p class="card-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            4.5(149)
+          </p>
+          <p>
+            $18 <s>$24</s
+            ><a href="#" style="margin-left: 30px" class="btn btn-success"
+              >+ADD</a
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        class="card"
+        style="width: 15.2rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./img-10.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Amul Butter-500g</h5>
+          <p class="card-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            4.5(149)
+          </p>
+          <p>
+            $18 <s>$24</s
+            ><a href="#" style="margin-left: 30px" class="btn btn-success"
+              >+ADD</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="hero-txt1">Daliy-Best Sales</p>
+
+    <div style="display: flex; justify-content: center; gap: 40px">
+      <div class="hero-img">
+        <p style="padding-top: 25px; padding-left: 27px" class="mid-txt">
+          100% Organic Coffee<br />
+          Beans.
+        </p>
+        <p style="padding-left: 27px" class="mid-txt2">
+          Get the best deal before close.
+        </p>
+        <button
+          style="
+            margin-left: 20px;
+            line-height: 22.4px;
+            font-weight: 600px;
+            font-size: 14px;
+            font-family: Inter, sans-serif;
+            background-color: rgb(3, 138, 3);
+            color: rgb(255, 255, 255);
+          "
+          type="button"
+          class="btn btn"
+        >
+          Shop Now →
+        </button>
+      </div>
+      <div
+        class="card"
+        style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./car2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Roast Ground Coffee</h5>
+          <p class="card-text" style="padding-right: 80px">
+            $13<s>$18</s>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+          </p>
+          <button
+            style="background-color: rgb(3, 138, 3); margin-left: 50px"
+            type="button"
+            class="btn btn-primary active"
+            data-bs-toggle="button"
+            aria-pressed="true"
+          >
+            +Add To Cart
+          </button>
+          <p class="card-text"></p>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./card3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Roast Ground Coffee</h5>
+          <p class="card-text" style="padding-right: 80px">
+            $13<s>$18</s>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+          </p>
+          <button
+            style="background-color: rgb(3, 138, 3); margin-left: 50px"
+            type="button"
+            class="btn btn-primary active"
+            data-bs-toggle="button"
+            aria-pressed="true"
+          >
+            +Add To Cart
+          </button>
+          <p class="card-text"></p>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      >
+        <img src="./card4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Roast Ground Coffee</h5>
+          <p class="card-text" style="padding-right: 80px">
+            $13<s>$18</s>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+          </p>
+          <button
+            style="background-color: rgb(3, 138, 3); margin-left: 50px"
+            type="button"
+            class="btn btn-primary active"
+            data-bs-toggle="button"
+            aria-pressed="true"
+          >
+            +Add To Cart
+          </button>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 60px;
+      "
+    >
+      <div class="card border-light mb-3" style="max-width: 18rem">
+        <div class="card-header"><img src="./icon1clock.svg" /></div>
+        <div class="card-body">
+          <h5 class="card-title main">10 minute grocery now</h5>
+          <p class="card-text main1">
+            Get your order delivered to your doorstep at the earliest from
+            FreshCart pickup stores near you.
+          </p>
+        </div>
+      </div>
+      <div class="card border-light mb-3" style="max-width: 18rem">
+        <div class="card-header"><img src="./icon2gift.svg" /></div>
+        <div class="card-body">
+          <h5 class="card-title main">Best Prices & Offers</h5>
+          <p class="card-text main1">
+            Cheaper prices than your local supermarket, great cashback offers to top it off. Get best pricess & offers.
+          </p>
+        </div>
+      </div>
+      <div class="card border-light mb-3" style="max-width: 18rem">
+        <div class="card-header"><img src="./icon3package.svg" /></div>
+        <div class="card-body">
+          <h5 class="card-title main">Wide Assortment</h5>
+          <p class="card-text main1">
+            Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories.
+          </p>
+        </div>
+      </div>
+      <div class="card border-light mb-3" style="max-width: 18rem">
+        <div class="card-header"><img src="./icon4refresh-cw.svg" /></div>
+        <div class="card-body">
+          <h5 class="card-title main">Easy Returns</h5>
+          <p class="card-text main1">
+            Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked policy .
+          </p>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #f0f3f2; display: flex; justify-content:center; gap:99px; margin-top: 70px;">
+      <div>
+        <span class="txt-foot">Categories</span><br>
+        <span class="txt-foot2">Vegetables & Fruits</span><br>
+        <span class="txt-foot2"> Breakfast & instant food</span><br>
+        <span class="txt-foot2"> Bakery & Biscuits</span><br>
+        <span class="txt-foot2"> Atta,rice & dal </span><br>
+        <span class="txt-foot2">Sauces & spreads </span><br>
+        <span class="txt-foot2">Organic & gourmet </span><br>
+        <span class="txt-foot2">Baby care</span><br>
+        <span class="txt-foot2"> Cleaning essentials </span><br>
+          <span  class="txt-foot2">Personal care</span><br>
+      </div>
+      
+      <div>
+  
+        <span class="txt-foot">Dairy, bread & eggs</span><br>
+        <span class="txt-foot2">Cold drinks & juices </span><br>
+        <span class="txt-foot2"> Tea, coffee & drinks</span><br>
+        <span class="txt-foot2"> Chicken, meat & fish</span><br>
+        <span class="txt-foot2"> Paan corner</span><br>
+        <span class="txt-foot2">Sauces & spreads </span><br>
+        <span class="txt-foot2">Pharma & wellness</span><br>
+        <span class="txt-foot2">Home & office</span><br>
+        <span class="txt-foot2"> Cleaning essentials </span><br>
+          <span  class="txt-foot2">Pet care</span><br>
+      </div>
+      <div>
+        <span class="txt-foot">Get to know us</span><br>
+        <span class="txt-foot2">Company</span><br>
+        <span class="txt-foot2"> About</span><br>
+        <span class="txt-foot2">Blog</span><br>
+        <span class="txt-foot2"> Help Center</span><br>
+        <span class="txt-foot2"> Our Value</span><br>
+       </div>
+    
+
+    <div>
+      <span class="txt-foot">For Consumers</span><br>
+      <span class="txt-foot2">Payments</span><br>
+      <span class="txt-foot2">Shipping</span><br>
+      <span class="txt-foot2">Product Return</span><br>
+      <span class="txt-foot2">FAQ</span><br>
+      <span class="txt-foot2">Shop Checkout</span><br>
+     </div>
+     <div>
+      <span class="txt-foot">Become a Shopper</span><br>
+      <span class="txt-foot2">Shopper Opportunities</span><br>
+      <span class="txt-foot2">Become a Shopper</span><br>
+      <span class="txt-foot2">Earnings</span><br>
+      <span class="txt-foot2"> Ideas & Guides</span><br>
+      <span class="txt-foot2">New Retailers</span><br>
+     </div>
+     <div>
+      <span class="txt-foot">Freshcart programs</span><br>
+      <span class="txt-foot2">Freshcart programs  </span><br>
+      <span class="txt-foot2">Gift Cards  </span><br>
+      <span class="txt-foot2">Promos & Coupons  </span><br>
+      <span class="txt-foot2"> Freshcart Ads</span><br>
+      <span class="txt-foot2">Careers</span><br>
+     </div>
+     
+    </div>
+    <div>
+      <div style=" background-color: #f0f3f2; margin-top: 40px; display: flex;justify-content: center;gap: 50px;">
+        <span style="font-family:  Inter, sans-serif; font-size: 16px;font-weight: 500;line-height: 22.4px; color: rgb(0, 30, 43);margin-left: 110px; font-weight: bold;">Payment Partners</span>
+        <img src="./amazonpay.svg">
+        <img src="./american-express.svg" alt="">
+        <img src="./mastercard.svg" alt="">
+        <img src="./paypal.svg">
+        <img src="./visa.svg" alt="">
+        <span style="font-family:  Inter, sans-serif; font-size: 16px;font-weight: 500;line-height: 22.4px; color: rgb(0, 30, 43); font-weight: bold;">Get deliveries with FreshCart</span>
+        <img src="./appstore-btn.svg">
+        <img src="./googleplay-btn.svg" alt="">
+      </div> 
+    </div>
+    
+  
+  
+  
+  
+  
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+ 
